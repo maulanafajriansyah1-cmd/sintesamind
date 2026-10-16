@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#00506A">
+  <meta name="description" content="SintesaMind, ruang edukasi dan dukungan kesehatan mental bagi remaja dan mahasiswa.">
+  <title>SintesaMind — Ruang Aman Kesehatan Jiwa</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#konten">Lewati ke konten</a>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Navigasi utama">
+      <a href="#beranda" class="brand"><i class="fa-solid fa-brain" aria-hidden="true"></i><span>SintesaMind</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Buka menu"><i class="fa-solid fa-bars"></i></button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#edukasi" class="active">Edukasi</a></li>
+        <li><a href="#tes-mandiri">Tes Mandiri</a></li>
+        <li><a href="#forum-anonim">Forum Anonim</a></li>
+        <li><a href="#kontak-bantuan">Kontak Bantuan</a></li>
+      </ul>
+      <div class="nav-right">
+        <label class="search-box" for="searchInput"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i><input id="searchInput" type="search" placeholder="Cari topik..." autocomplete="off"></label>
+        <button class="btn btn-primary open-modal-btn"><i class="fa-solid fa-pen-to-square" aria-hidden="true"></i> Curhat Anonim</button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="konten">
+    <section class="hero container" id="beranda">
+      <div class="hero-text">
+        <span class="tag-badge"><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> Ruang aman dan suportif</span>
+        <h1>Menyatukan Pikiran,<br> Menenangkan Jiwa.</h1>
+        <p>Ruang edukasi dan tempat berbagi cerita tentang kesehatan mental untuk remaja dan mahasiswa. Bebas stigma, saling mendukung, dan tanpa perlu membuat akun.</p>
+        <div class="hero-buttons">
+          <button class="btn btn-primary open-modal-btn"><i class="fa-solid fa-pen-to-square" aria-hidden="true"></i> Mulai Cerita Anonim</button>
+          <a href="#tes-mandiri" class="btn btn-secondary"><i class="fa-solid fa-heart-pulse" aria-hidden="true"></i> Cek Kesehatan Jiwa</a>
+        </div>
+        <p class="hero-note"><i class="fa-solid fa-lock" aria-hidden="true"></i> Catatan dan cerita disimpan di browser perangkat ini.</p>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-illustration"><i class="fa-solid fa-people-group" aria-hidden="true"></i></div>
+        <h2>SintesaMind Safe Space</h2>
+        <p>“Kamu tidak harus menyelesaikan beban pikiranmu sendirian. Mari urai bersama di ruang yang aman dan saling mendukung.”</p>
+        <span class="visual-decoration" aria-hidden="true">🌿</span>
+      </div>
+    </section>
+
+    <section class="features-section container" id="edukasi" aria-label="Fitur SintesaMind">
+      <a href="#artikel-edukasi" class="feature-card"><span class="feature-icon"><i class="fa-solid fa-book-open"></i></span><span class="feature-info"><strong>Katalog Edukasi</strong><small>Artikel dan tips kesehatan mental</small></span><i class="fa-solid fa-arrow-up-right-from-square feature-arrow"></i></a>
+      <a href="#tes-mandiri" class="feature-card"><span class="feature-icon"><i class="fa-solid fa-clipboard-check"></i></span><span class="feature-info"><strong>Skrining Mandiri</strong><small>Refleksi kondisi diri sederhana</small></span><i class="fa-solid fa-arrow-up-right-from-square feature-arrow"></i></a>
+      <a href="#coping-tools" class="feature-card"><span class="feature-icon"><i class="fa-solid fa-wind"></i></span><span class="feature-info"><strong>Coping Tools</strong><small>Pernapasan dan grounding</small></span><i class="fa-solid fa-arrow-up-right-from-square feature-arrow"></i></a>
+      <a href="#safe-journal" class="feature-card"><span class="feature-icon"><i class="fa-solid fa-book-bookmark"></i></span><span class="feature-info"><strong>Jurnal Diri</strong><small>Ruang menulis privat di perangkat</small></span><i class="fa-solid fa-arrow-up-right-from-square feature-arrow"></i></a>
+    </section>
+
+    <section class="content-section container" id="artikel-edukasi">
+      <div class="section-heading"><div><span class="eyebrow">KENALI DIRI, RAWAT DIRI</span><h2>Bekal kecil untuk hari yang berat</h2></div><p>Mulai dari satu langkah yang terasa mungkin dilakukan hari ini.</p></div>
+      <div class="article-grid searchable">
+        <article class="article-card post-card"><div class="article-icon green"><i class="fa-solid fa-battery-quarter"></i></div><span class="article-label">Keseharian</span><h3>Mengenali tanda kelelahan emosional</h3><p>Kesulitan fokus, mudah tersinggung, atau merasa lelah terus-menerus bisa menjadi sinyal untuk berhenti sejenak dan mengecek kebutuhan diri.</p><button class="text-button article-more" data-title="Mengenali tanda kelelahan emosional" data-body="Coba amati perubahan tidur, energi, konsentrasi, dan minat pada aktivitas. Beri ruang untuk istirahat, bercerita pada orang tepercaya, dan mencari bantuan profesional bila kondisi menetap atau mengganggu kegiatan sehari-hari.">Baca selengkapnya <i class="fa-solid fa-arrow-right"></i></button></article>
+        <article class="article-card post-card"><div class="article-icon sand"><i class="fa-solid fa-cloud-sun"></i></div><span class="article-label">Coping</span><h3>Jeda singkat saat kecemasan datang</h3><p>Alihkan perhatian ke napas dan lingkungan sekitar. Tidak perlu memaksa diri agar langsung merasa baik-baik saja.</p><button class="text-button article-more" data-title="Jeda singkat saat kecemasan datang" data-body="Duduk dengan posisi nyaman. Tarik napas perlahan tanpa dipaksakan, lalu embuskan sedikit lebih panjang. Sebutkan benda yang terlihat di sekitar. Jika latihan membuat tidak nyaman, hentikan dan kembali bernapas seperti biasa.">Baca selengkapnya <i class="fa-solid fa-arrow-right"></i></button></article>
+        <article class="article-card post-card"><div class="article-icon blue"><i class="fa-solid fa-people-arrows-left-right"></i></div><span class="article-label">Dukungan sosial</span><h3>Memulai cerita kepada orang tepercaya</h3><p>Kamu boleh mulai dengan kalimat sederhana: “Aku sedang tidak baik-baik saja dan butuh ditemani sebentar.”</p><button class="text-button article-more" data-title="Memulai cerita kepada orang tepercaya" data-body="Pilih orang yang kamu rasa aman, tentukan waktu yang cukup tenang, lalu sampaikan apa yang kamu rasakan dan bantuan apa yang kamu butuhkan. Kamu tidak harus menceritakan semuanya sekaligus.">Baca selengkapnya <i class="fa-solid fa-arrow-right"></i></button></article>
+      </div>
+    </section>
+
+    <section class="content-section container" id="mood-tracker">
+      <article class="panel mood-card post-card searchable">
+        <div class="panel-heading"><div><span class="eyebrow">CHECK-IN HARIAN</span><h2>Bagaimana perasaanmu hari ini?</h2><p class="muted">Pilih yang paling mendekati perasaanmu. Tidak ada jawaban benar atau salah.</p></div><span class="panel-symbol"><i class="fa-regular fa-face-smile"></i></span></div>
+        <div class="mood-options" id="moodOptions">
+          <button class="mood-btn" data-mood="Sangat baik" aria-pressed="false"><span>🤩</span><strong>Sangat baik</strong></button>
+          <button class="mood-btn" data-mood="Baik" aria-pressed="false"><span>🙂</span><strong>Baik</strong></button>
+          <button class="mood-btn" data-mood="Biasa saja" aria-pressed="false"><span>😐</span><strong>Biasa saja</strong></button>
+          <button class="mood-btn" data-mood="Cemas" aria-pressed="false"><span>😰</span><strong>Cemas</strong></button>
+          <button class="mood-btn" data-mood="Sedih" aria-pressed="false"><span>😢</span><strong>Sedih</strong></button>
+          <button class="mood-btn" data-mood="Lelah" aria-pressed="false"><span>😮‍💨</span><strong>Lelah</strong></button>
+        </div>
+        <p id="moodStatus" class="status-message" aria-live="polite"></p>
+      </article>
+    </section>
+
+    <section class="content-section container" id="coping-tools">
+      <div class="section-heading"><div><span class="eyebrow">COBA SEKARANG</span><h2>Alat bantu menenangkan diri</h2></div><p>Gunakan dengan nyaman. Hentikan jika terasa pusing atau tidak nyaman.</p></div>
+      <div class="tools-grid">
+        <article class="panel post-card text-center searchable">
+          <div class="tool-icon"><i class="fa-solid fa-wind"></i></div><h3>Latihan pernapasan</h3><p class="muted">Ikuti irama dengan perlahan selama tiga putaran.</p>
+          <div id="breathCircle" class="breath-circle" role="status" aria-live="polite">Siap?</div>
+          <p id="breathHint" class="muted small">Tarik napas dengan nyaman, jangan dipaksakan.</p>
+          <button class="btn btn-primary" id="startBreathBtn"><i class="fa-solid fa-play"></i> Mulai latihan</button>
+        </article>
+        <article class="panel post-card searchable">
+          <div class="tool-icon"><i class="fa-solid fa-anchor"></i></div><h3>Grounding 5-4-3-2-1</h3><p class="muted">Arahkan perhatian ke hal-hal yang ada di sekitarmu.</p>
+          <div class="grounding-box">
+            <span id="groundingStepBadge" class="tag-badge">Langkah 1 dari 5</span>
+            <div id="stepIcon" class="step-icon"><i class="fa-solid fa-eye"></i></div>
+            <h4 id="stepTitle">5 hal yang bisa kamu lihat</h4>
+            <p id="stepDesc">Amati lima benda yang bisa kamu lihat di sekitarmu.</p>
+          </div>
+          <div class="button-row"><button class="btn btn-outline" id="prevGroundingBtn" disabled><i class="fa-solid fa-arrow-left"></i> Sebelumnya</button><button class="btn btn-primary" id="nextGroundingBtn">Lanjut <i class="fa-solid fa-arrow-right"></i></button></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-section container" id="safe-journal">
+      <article class="panel post-card searchable">
+        <div class="panel-heading"><div><span class="eyebrow">RUANG PRIVAT</span><h2><i class="fa-solid fa-book-bookmark icon-green"></i> Jurnal diri</h2><p class="muted">Catatan disimpan di browser perangkat ini, bukan dikirim ke server.</p></div><span class="panel-symbol"><i class="fa-solid fa-lock"></i></span></div>
+        <div class="privacy-note"><i class="fa-solid fa-circle-info"></i> PIN di fitur ini hanya pengunci sederhana di antarmuka, bukan enkripsi. Jangan gunakan untuk menyimpan informasi sangat sensitif atau pada perangkat bersama.</div>
+        <div id="pinArea" class="pin-box" hidden>
+          <label for="pinInput">Masukkan PIN 4 digit</label><div class="pin-row"><input type="password" id="pinInput" class="form-control pin-input" inputmode="numeric" maxlength="4" pattern="[0-9]{4}" placeholder="••••"><button class="btn btn-primary" id="submitPinBtn">Buka jurnal</button></div><p id="pinError" class="error-message" aria-live="polite"></p>
+        </div>
+        <label class="form-label" for="journalContent">Apa yang sedang ingin kamu keluarkan dari pikiranmu?</label>
+        <textarea id="journalContent" class="form-control journal-textarea" placeholder="Tulis tanpa perlu menyusun kata dengan sempurna..." rows="6"></textarea>
+        <div class="journal-actions"><span id="saveStatus" class="status-message" aria-live="polite"></span><div class="button-row"><button class="btn btn-outline" id="lockJournalBtn"><i class="fa-solid fa-lock"></i> Atur / kunci PIN</button><button class="btn btn-danger-outline" id="clearJournalBtn"><i class="fa-solid fa-trash"></i> Hapus</button><button class="btn btn-primary" id="saveJournalBtn"><i class="fa-solid fa-floppy-disk"></i> Simpan catatan</button></div></div>
+      </article>
+    </section>
+
+    <section class="content-section container" id="tes-mandiri">
+      <article class="panel post-card searchable">
+        <div class="panel-heading"><div><span class="eyebrow">REFLEKSI DIRI</span><h2>Tes check-in kondisi emosional</h2><p class="muted">Pertanyaan refleksi singkat, bukan alat diagnosis atau pengganti konsultasi profesional.</p></div><span class="panel-symbol"><i class="fa-solid fa-clipboard-check"></i></span></div>
+        <div class="progress-track"><span id="quizProgressBar"></span></div>
+        <div class="quiz-meta"><span id="screeningProgress">Soal 1 dari 5</span><span id="quizPercent">20%</span></div>
+        <div id="quizContainer">
+          <div class="quiz-box"><h3 id="questionText" class="question-text">Dalam 7 hari terakhir, seberapa sering kamu merasa sulit untuk rileks?</h3><div class="quiz-options" id="optionsGroup">
+            <button class="option-btn" data-score="0">Tidak pernah</button><button class="option-btn" data-score="1">Kadang-kadang</button><button class="option-btn" data-score="2">Sering</button><button class="option-btn" data-score="3">Hampir selalu</button>
+          </div></div>
+          <div class="button-row quiz-navigation"><button class="btn btn-outline" id="prevQuestionBtn" disabled><i class="fa-solid fa-arrow-left"></i> Sebelumnya</button><button class="btn btn-primary" id="nextQuestionBtn" disabled>Berikutnya <i class="fa-solid fa-arrow-right"></i></button></div>
+        </div>
+        <div id="resultContainer" class="result-box" hidden><div id="resultIcon" class="result-icon"><i class="fa-solid fa-heart"></i></div><h3 id="resultTitle">Terima kasih sudah melakukan check-in</h3><p id="resultDesc"></p><p class="muted small">Hasil ini hanya refleksi sederhana dan tidak dapat menentukan diagnosis. Jika keluhan menetap atau mengganggu aktivitas, pertimbangkan berbicara dengan tenaga profesional.</p><button class="btn btn-primary" id="restartQuizBtn"><i class="fa-solid fa-rotate-right"></i> Ulangi check-in</button></div>
+      </article>
+    </section>
+
+    <section class="content-section container" id="forum-anonim">
+      <div class="section-heading"><div><span class="eyebrow">KAMU TIDAK SENDIRIAN</span><h2>Ruang cerita & forum anonim</h2></div><button class="btn btn-primary open-modal-btn"><i class="fa-solid fa-plus"></i> Tulis cerita</button></div>
+      <div class="forum-notice"><i class="fa-solid fa-heart"></i><p>Jaga ruang ini tetap suportif. Jangan cantumkan nama lengkap, alamat, nomor telepon, atau informasi pribadi. Forum ini demo lokal: kiriman hanya tersimpan pada browser yang digunakan.</p></div>
+      <div id="postsContainer">
+        <article class="post-card forum-post">
+          <div class="post-top"><div class="avatar-anon">M</div><div class="post-author"><strong>Mahasiswa Semester 6</strong><small>Contoh cerita · Akademik & skripsi</small></div><span class="category-pill">Akademik & skripsi</span></div>
+          <p class="post-content">Sering merasa burnout banget tiap kali buka laptop buat ngerjain bimbingan skripsi. Ada tips gimana ngembaliin motivasi pas lagi burnout?</p>
+          <div class="post-footer"><button class="action-btn like-btn" aria-label="Beri dukungan"><i class="fa-regular fa-heart"></i> <span>24</span> Dukungan</button><span class="muted small"><i class="fa-regular fa-comment"></i> Contoh diskusi</span></div>
+        </article>
+      </div>
+      <p id="emptySearch" class="empty-state" hidden>Tidak ada konten yang cocok dengan kata kunci tersebut.</p>
+    </section>
+
+    <section class="content-section container" id="kontak-bantuan">
+      <article class="help-panel">
+        <div><span class="eyebrow light">BUTUH DUKUNGAN?</span><h2>Kamu layak mendapat bantuan.</h2><p>Jika kamu merasa tidak aman atau berada dalam krisis, hubungi orang tepercaya dan layanan bantuan resmi di wilayahmu. Untuk keadaan darurat medis di Indonesia, hubungi layanan darurat 119 sesuai ketersediaan wilayah.</p></div>
+        <div class="help-actions"><a href="tel:119" class="btn btn-light"><i class="fa-solid fa-phone"></i> Hubungi 119</a><a href="https://www.kemkes.go.id/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-light">Situs Kemenkes <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner"><a href="#beranda" class="brand footer-brand"><i class="fa-solid fa-brain"></i><span>SintesaMind</span></a><p>Ruang edukasi dan dukungan kesehatan mental.</p><p class="footer-disclaimer">SintesaMind adalah prototipe edukasi, bukan layanan klinis atau layanan krisis. Informasi dan fitur tidak menggantikan bantuan profesional.</p><small>© <span id="year"></span> SintesaMind. Dibuat untuk edukasi.</small></div>
+  </footer>
+
+  <div class="modal-overlay" id="curhatModal" aria-hidden="true">
+    <section class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-heading"><div><span class="eyebrow">RUANG CERITA</span><h2 id="modalTitle">Tulis cerita anonim</h2></div><button type="button" id="closeModalBtn" class="icon-button" aria-label="Tutup dialog"><i class="fa-solid fa-xmark"></i></button></div>
+      <form id="curhatForm">
+        <label class="form-label" for="userRole">Nama tampilan</label><select id="userRole" class="form-control"><option>Mahasiswa Anonim</option><option>Siswa SMA Anonim</option><option>Pejuang Skripsi</option><option>Teman Sintesa</option></select>
+        <label class="form-label" for="postCategory">Kategori cerita</label><select id="postCategory" class="form-control"><option>Akademik & skripsi</option><option>Kecemasan</option><option>Pertemanan & hubungan</option><option>Self-care & tips</option><option>Keluarga</option><option>Lainnya</option></select>
+        <label class="form-label" for="postContent">Isi cerita</label><textarea id="postContent" class="form-control" rows="5" maxlength="1200" placeholder="Ceritakan seperlunya. Hindari data pribadi..." required></textarea><div class="character-count"><span id="charCount">0</span>/1200</div>
+        <p class="muted small">Cerita akan tersimpan secara lokal di browser ini. Hindari membagikan informasi yang dapat mengidentifikasi dirimu.</p>
+        <div class="modal-actions"><button type="button" class="btn btn-outline" id="cancelModalBtn">Batal</button><button type="submit" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Terbitkan cerita</button></div>
+      </form>
+    </section>
+  </div>
+
+  <button id="chatbotToggleBtn" class="chatbot-toggle-btn" aria-label="Buka SintesaBot" aria-expanded="false"><i class="fa-solid fa-comment-dots"></i></button>
+  <section id="chatbotWindow" class="chatbot-window" aria-label="SintesaBot" hidden>
+    <div class="chatbot-header"><div class="chatbot-avatar"><i class="fa-solid fa-robot"></i></div><div class="chatbot-heading"><strong>SintesaBot</strong><small>Teman refleksi virtual</small></div><button id="closeChatbotBtn" class="icon-button inverse" aria-label="Tutup chatbot"><i class="fa-solid fa-xmark"></i></button></div>
+    <div id="chatbotMessages" class="chatbot-messages" aria-live="polite"><div class="bot-msg-bubble">Halo 🌿 Aku bisa menyarankan langkah kecil untuk menenangkan diri. Aku bukan tenaga profesional, ya.</div></div>
+    <div id="chatbotOptions" class="chatbot-options"><button class="chat-opt-btn" data-reply="cemas">😰 Merasa cemas</button><button class="chat-opt-btn" data-reply="burnout">🤯 Burnout</button><button class="chat-opt-btn" data-reply="dukungan">💬 Butuh bercerita</button><button class="chat-opt-btn" data-reply="bantuan">☎️ Kontak bantuan</button></div>
+  </section>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <noscript><p class="noscript">JavaScript perlu diaktifkan agar fitur interaktif SintesaMind dapat digunakan.</p></noscript>
+</body>
+</html>
